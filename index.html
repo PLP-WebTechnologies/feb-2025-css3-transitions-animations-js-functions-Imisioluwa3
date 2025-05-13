@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Wonders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dis">
+    <h1>DOM Wonders</h1>
+    <div class="cont bt">
+        <h2 style="text-align: center; color:black;">Join Meeting</h2>
+        <div class="mid">
+            <label for="id">Meeting ID:</label> 
+            <input type="number" name="id" id="id" class="bt" placeholder="Meeting ID" required> 
+        </div>
+        <div class="pcode">
+            <label for="code">Passcode:</label>
+            <input type="text" name="pcode" id="pcode" class="bt" placeholder="Passcode" required>
+        </div>
+        <button type="submit" id="btn" onclick="verify()" class="bt">Join</button>
+    </div>
+    <div id="ball"></div>
+
+    <div id="con">
+        <h2>Meeting Title</h2>
+        <input type="text" name="name" id="name" placeholder="Type your name" required>
+        <div class="mContainer dis">
+            <div>
+                <img src="./img/meet.jpg" alt="A picture of a person in a meeting" width="300px" height="200px">
+                <div class="below-cam dis">
+                    <img src="./img/video-call.png" class="icon" alt="video icon">
+                    <h3>Background Filter</h3>
+                    <img src="/img/settings.png" class="icon" alt="settings icon">  
+                </div>
+            </div>
+        </div>
+        <div class="box"></div>
+        <button id="btn" class="bt" onclick="showStoredInfo()">Show LocalStorage</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
